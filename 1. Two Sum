@@ -15,3 +15,28 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     *returnSize = 0;
     return NULL; 
 }
+
+
+
+##Another way without using hash table:
+
+#include<stdio.h>
+int main(){
+    int numSize, i,arr[5];
+    int target;
+    printf("\nEnter the num size: ");
+    scanf("%d",&numSize);
+    printf("\nEnter the Array: ");
+    for(i=0;i<numSize;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("\nEnter the Target: ");
+    scanf("%d",&target);
+    for(i=0;i<=numSize;i++)
+    {if(arr[i]+arr[i+1]==target)
+    {
+        printf("Output: %d %d",i,i+1);
+    }
+    }
+}
+##
