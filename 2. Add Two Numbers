@@ -29,3 +29,29 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 
 
  ## General and Easy Apporach
+
+#include <stdio.h>
+int main()
+{
+    int arr1[5],arrl1[5],arrl2[5],size,i;
+    printf("Enter the number of values to be stored in l1: ");
+    scanf("%d",&size);
+    for(i=0;i<size;i++){
+        printf("\nEnter the values in l1: ");    
+        scanf("%d",&arrl1[i]);
+    }
+    for(i=0;i<size;i++){
+        printf("\nEnter the values in l2: ");
+        scanf("%d",&arrl2[i]);
+    }
+    for(i=0;i<size;i++){
+       arr1[i]=0;
+    }
+    for(i<size;i>=0;i--){
+       arr1[i]=arrl1[i]+arrl2[i];
+       printf("%d ",arr1[i]);
+    }
+}
+
+
+##
