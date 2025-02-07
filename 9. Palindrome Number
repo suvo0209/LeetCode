@@ -1,3 +1,5 @@
+## c program
+
 bool isPalindrome(int x) {
     if (x < 0) return false;
     long num = x, reversedNum = 0, remainder, originalNum = x;
