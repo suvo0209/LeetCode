@@ -6,7 +6,7 @@ char* longestCommonPrefix(char* strs[], int strsSize) {
         char current_char = strs[0][i];
         
         // Compare this character to the same position in other strings
-        for (int j = 1; j < strsSize; j++) {
+        for (int j = 1; j < strsSize; j++) { 
             if (strs[j][i] != current_char) {
                 strs[0][i] = '\0';  // Shorten the prefix by removing the character
                 return strs[0];  // Return the prefix up to the point of mismatch
