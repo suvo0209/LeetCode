@@ -12,7 +12,7 @@ char* longestCommonPrefix(char* strs[], int strsSize) {
                 return strs[0];  // Return the prefix up to the point of mismatch
             }
         }
-    }
+    } 
     
     return strs[0];  // Return the common prefix
 }
